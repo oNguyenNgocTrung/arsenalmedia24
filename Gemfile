@@ -28,6 +28,10 @@ group :development do
   gem "spring-watcher-listen", "~> 2.0.0"
   gem "celluloid", git: "https://github.com/celluloid/celluloid", submodules: true
   gem "brakeman"
+  gem "capistrano", "~> 3.4"
+  gem "capistrano-bundler"
+  gem "capistrano-rails"
+  gem "capistrano-rvm"
 end
 
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
