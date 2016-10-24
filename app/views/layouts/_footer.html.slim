@@ -1,0 +1,13 @@
+.navbar.navbar-default.navbar-fixed-bottom
+  ul.nav.navbar-nav.no-border.visible-xs-block
+    li
+      a.text-center.collapsed data-toggle="collapse" data-target="#navbar-second"
+        i.icon-circle-up2
+  #navbar-second.navbar-collapse.collapse
+    .navbar-text
+      | &copy; 2016.
+      == link_to t("AM"), root_path
+    .navbar-right
+      ul.nav.navbar-nav
+        li == link_to "Help center", "javascript:void(0)"
+        li == link_to "Policy", "javascript:void(0)"

@@ -13,6 +13,8 @@ module Arsenalmedia24
     # -- all .rb files in that directory are automatically loaded.
     config.i18n.load_path += Dir["#{Rails.root.to_s}/config/locales/**/*.{rb,yml}"]
     config.autoload_paths << Rails.root.join("lib")
+    config.assets.enabled = true
+    config.assets.paths << Rails.root.join("app", "assets", "fonts")
 
     Dir.glob("config/routes/*").each do |route|
       config.paths["config/routes.rb"] << Rails.root.join(route)

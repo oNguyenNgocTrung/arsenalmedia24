@@ -1,0 +1,15 @@
+en:
+  layouts:
+    main_navbar:
+      english: English
+      vietnamese: Vietnamese
+      user_profile: My Profile
+      user_setting: Account settings
+      logout: Logout
+    second_navbar:
+      home: Home
+      new: News
+      team: Teams
+      club: Clubs
+      media: Media
+      schedule: Schedule
