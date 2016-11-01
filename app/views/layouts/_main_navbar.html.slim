@@ -7,17 +7,23 @@
         a data-toggle="collapse" data-target="#navbar-mobile"
           i.icon-tree5
   #navbar-mobile.navbar-collapse.collapse
+    - language = I18n.locale == :vi ? "vietnam" : "english"
+    - language_select = I18n.locale == :vi ? "english" : "vietnam"
+    - img_lang = I18n.locale == :vi ? "flags/vn.png" : "flags/gb.png"
+    - img_lang_select = I18n.locale == :vi ? "flags/gb.png" : "flags/vn.png"
+    - locale_select = I18n.locale == :vi ? :en : :vi
     ul.nav.navbar-nav.navbar-right
       li.dropdown.language-switch
         a.dropdown-toggle data-toggle="dropdown"
-          == image_tag "flags/gb.png", class: "position-left", alt: ""
-          == t ".english"
+          == image_tag img_lang, class: "position-left", alt: ""
+          == t ".#{language}"
           span.caret
         ul.dropdown-menu
           li
-            == link_to "javascript:void(0)", class: "vietnam" do
-              == image_tag "flags/vn.png", alt: ""
-              == t ".vietnam"
+            == link_to change_locale_path(locale_select), 
+              class: "#{language_select}" do
+              == image_tag img_lang_select, alt: ""
+              == t ".#{language_select}"
       li.dropdown.dropdown-user
         a.dropdown-toggle data-toggle="dropdown"
           == image_tag "placeholder.jpg", alt: ""
