@@ -1,0 +1,31 @@
+#navbar-second.navbar.navbar-default
+  ul.nav.navbar-nav.no-border.visible-xs-block
+    li
+      a.text-center.collapsed data-toggle="collapse" data-target="#navbar-second-toggle"
+        i.icon-menu7
+  #navbar-second-toggle.navbar-collapse.collapse
+    ul.nav.navbar-nav
+      li.active
+        == link_to root_path do
+          i.icon-home.position-left
+          == t ".home"
+      li
+        == link_to "javascript:void(0)" do
+          i.icon-new.position-left
+          == t ".new"
+      li
+        == link_to "javascript:void(0)" do
+          i.icon-users4.position-left
+          == t ".team"
+      li
+        == link_to "javascript:void(0)" do
+          i.fa.fa-futbol-o.spinner.position-left
+          == t ".club"
+      li
+        == link_to "javascript:void(0)" do
+          i.icon-media.position-left
+          == t ".media"
+      li
+        == link_to "javascript:void(0)" do
+          i.icon-calendar.position-left
+          == t ".schedule"

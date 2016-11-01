@@ -1,0 +1,51 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900);
+@import "icomoon";
+@import "font-awesome";
+@font-face {
+  font-family: "Glyphicons Halflings";
+  src: asset-url("glyphicons-halflings-regular.eot");
+  src: asset-url("glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"),
+    asset-url("glyphicons-halflings-regular.woff2") format("woff2"),
+    asset-url("glyphicons-halflings-regular.woff") format("woff"),
+    asset-url("glyphicons-halflings-regular.ttf") format("truetype"),
+    asset-url("glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+}
+@font-face {
+  font-family: "summernote";
+  font-style: normal;
+  font-weight: normal;
+  src: asset-url("summernote.eot?ad8d7e2d177d2473aecd9b35d16211fb");
+  src: asset-url("summernote.eot?#iefix") format("embedded-opentype"),
+       asset-url("summernote.woff?ad8d7e2d177d2473aecd9b35d16211fb") format("woff"),
+       asset-url("summernote.ttf?ad8d7e2d177d2473aecd9b35d16211fb") format("truetype");
+}
+.ui-selectmenu-images .demo-img-amazon {
+  background: asset-url("brands/amazon.png") no-repeat;
+}
+.ui-selectmenu-images .demo-img-youtube {
+  background: asset-url("brands/youtube.png") no-repeat;
+}
+.ui-selectmenu-images .demo-img-twitter {
+  background: asset-url("brands/twitter.png") no-repeat;
+}
+.ui-selectmenu-images .demo-img-bing {
+  background: asset-url("brands/bing.png") no-repeat;
+}
+.ui-selectmenu-images .demo-img-spotify {
+  background: asset-url("brands/spotify.png") no-repeat;
+}
+
+.login-cover {
+  background: asset-url("login_cover.jpg") no-repeat;
+  background-size: cover;
+}
+
+.page-header-inverse.has-cover {
+  background: asset-url("login_cover.jpg");
+  background-size: cover;
+}
+
+.page-header-default.has-cover {
+  background: asset-url("backgrounds/seamless.png");
+}
