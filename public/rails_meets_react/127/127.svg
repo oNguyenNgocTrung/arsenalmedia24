@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewBox="0 0 935 1210" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<style type="text/css"><![CDATA[
+.g2_127{
+fill: none;
+stroke: #646464;
+stroke-width: 1;
+stroke-linecap: butt;
+stroke-linejoin: miter;
+}
+.g1_127{
+fill: #F0F0F0;
+}
+]]></style>
+</defs>
+<path d="M110,1028l0,-693l714,0l0,693Z" class="g1_127" />
+<path d="M110.5,1028.5l0,-693l714,0l0,693Z" class="g2_127" />
+<image x="153" y="627" width="457" height="371" xlink:href="img/1.png" />
+</svg>

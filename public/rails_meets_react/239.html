@@ -1,0 +1,148 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta charset="utf-8" />
+</head>
+
+<body style="margin: 0;">
+
+<div id="p239" style="overflow: hidden; position: relative; width: 935px; height: 1210px;">
+
+<!-- Begin shared CSS values -->
+<style type="text/css" >
+.t {
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	-webkit-transform: scale(0.25);
+	-moz-transform: scale(0.25);
+	-o-transform: scale(0.25);
+	-ms-transform: scale(0.25);
+	z-index: 2;
+	position: absolute;
+	white-space: pre;
+	overflow: visible;
+}
+</style>
+<!-- End shared CSS values -->
+
+
+<!-- Begin inline CSS -->
+<style type="text/css" >
+
+#t1_239{left:110px;top:88px;word-spacing:0.7px;}
+#t2_239{left:801px;top:85px;}
+#t3_239{left:110px;top:141px;word-spacing:19.8px;}
+#t4_239{left:110px;top:161px;word-spacing:19.8px;}
+#t5_239{left:127px;top:182px;word-spacing:19.8px;}
+#t6_239{left:110px;top:203px;word-spacing:19.8px;}
+#t7_239{left:127px;top:223px;word-spacing:19.8px;}
+#t8_239{left:110px;top:244px;}
+#t9_239{left:110px;top:291px;}
+#ta_239{left:110px;top:345px;}
+#tb_239{left:127px;top:365px;word-spacing:19.8px;}
+#tc_239{left:110px;top:407px;word-spacing:19.8px;}
+#td_239{left:127px;top:428px;}
+#te_239{left:144px;top:448px;word-spacing:19.8px;}
+#tf_239{left:144px;top:469px;word-spacing:19.8px;}
+#tg_239{left:127px;top:510px;}
+#th_239{left:110px;top:531px;}
+#ti_239{left:110px;top:581px;word-spacing:0.9px;}
+#tj_239{left:110px;top:638px;word-spacing:2.6px;}
+#tk_239{left:110px;top:660px;letter-spacing:-0.2px;}
+
+.s3_239{
+	FONT-SIZE: 56.7px;
+	FONT-FAMILY: SourceCodePro-Regular_1vb;
+	color: rgb(0,0,0);
+}
+
+.s4_239{
+	FONT-SIZE: 105.2px;
+	FONT-FAMILY: OpenSans-Bold_1u_;
+	color: rgb(0,0,0);
+}
+
+.s2_239{
+	FONT-SIZE: 73.1px;
+	FONT-FAMILY: LinLibertine_1v3;
+	color: rgb(0,0,0);
+}
+
+.s1_239{
+	FONT-SIZE: 60.9px;
+	FONT-FAMILY: LinLibertine_1v3;
+	color: rgb(0,0,0);
+}
+
+</style>
+<!-- End inline CSS -->
+
+<!-- Begin embedded font definitions -->
+<style id="fonts239" type="text/css" >
+
+@font-face {
+	font-family: SourceCodePro-Regular_1vb;
+	src: url("fonts/SourceCodePro-Regular_1vb.woff") format("woff");
+}
+
+@font-face {
+	font-family: OpenSans-Bold_1u_;
+	src: url("fonts/OpenSans-Bold_1u_.woff") format("woff");
+}
+
+@font-face {
+	font-family: LinLibertine_1v3;
+	src: url("fonts/LinLibertine_1v3.woff") format("woff");
+}
+
+</style>
+<!-- End embedded font definitions -->
+
+<!-- Begin text definitions (Positioned/styled in CSS) -->
+<div id="t1_239" class="t s1_239">On my radar: RethinkDB + React.js + Rails</div>
+<div id="t2_239" class="t s2_239">232</div>
+<div id="t3_239" class="t s3_239">rql = RethinkDB::RQL.new</div>
+<div id="t4_239" class="t s3_239">rql.table( Article.table_name ).filter({id: Article.first.id}).union(</div>
+<div id="t5_239" class="t s3_239">rql.table( "pings" ).filter({id: Process.pid})</div>
+<div id="t6_239" class="t s3_239">).changes.run(NoBrainer.connection.raw).each do |change|</div>
+<div id="t7_239" class="t s3_239"># ...</div>
+<div id="t8_239" class="t s3_239">end</div>
+<div id="t9_239" class="t s2_239">Send pings.</div>
+<div id="ta_239" class="t s3_239">r.db("rethinkapp_development").table("pings").</div>
+<div id="tb_239" class="t s3_239">insert({id: Process.pid, on: Time.now.to_i, ping: "ping"}).run</div>
+<div id="tc_239" class="t s3_239">loop do</div>
+<div id="td_239" class="t s3_239">r.db("rethinkapp_development").table("pings").</div>
+<div id="te_239" class="t s3_239">filter{|ping| ping["id"].eq(Process.pid)}.</div>
+<div id="tf_239" class="t s3_239">update(on: Time.now.to_i).run</div>
+<div id="tg_239" class="t s3_239">sleep(10)</div>
+<div id="th_239" class="t s3_239">end</div>
+<div id="ti_239" class="t s4_239">Final thoughts</div>
+<div id="tj_239" class="t s2_239">Despite many dragons I have a feeling that there is a big potential in RethinkDB. I will keep it on</div>
+<div id="tk_239" class="t s2_239">my radar and explore more deeply.</div>
+
+<!-- End text definitions -->
+
+<!-- Begin page background -->
+<div id="pg239Overlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+<div id="pg239"><object width="935" height="1210" data="239/239.svg" type="image/svg+xml" id="pdf239" style="width:935px; height:1210px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object></div>
+<!-- End page background -->
+
+<!--[if lt IE 9]><script type="text/javascript">
+(function(divCount, pageNum) {
+for (var i = 1; i < divCount; i++) {
+    var div = document.getElementById('t' + i.toString(36) + '_' + pageNum);
+    if (div !== null) {
+        div.style.top = (div.offsetTop * 4) + 'px';
+        div.style.left = (div.offsetLeft * 4) + 'px';
+        div.style.zoom = '25%';
+    }
+}
+})(21, 239);
+</script><![endif]-->
+
+</div>
+</body>
+</html>
