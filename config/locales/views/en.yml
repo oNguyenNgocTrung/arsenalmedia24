@@ -2,7 +2,7 @@ en:
   layouts:
     main_navbar:
       english: English
-      vietnamese: Vietnamese
+      vietnam: Vietnamese
       user_profile: My Profile
       user_setting: Account settings
       logout: Logout

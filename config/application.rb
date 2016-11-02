@@ -15,6 +15,9 @@ module Arsenalmedia24
     config.autoload_paths << Rails.root.join("lib")
     config.assets.enabled = true
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
+    I18n.available_locales = [:en, :vi]
+    config.time_zone = "London"
+    config.i18n.default_locale = :vi
 
     Dir.glob("config/routes/*").each do |route|
       config.paths["config/routes.rb"] << Rails.root.join(route)

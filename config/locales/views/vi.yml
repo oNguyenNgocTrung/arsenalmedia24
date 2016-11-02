@@ -1,0 +1,15 @@
+vi:
+  layouts:
+    main_navbar:
+      english: Tiếng Anh
+      vietnam: Tiếng Việt
+      user_profile: Thông tin tài khoản
+      user_setting: Cài đặt tài khoản
+      logout: Đăng xuất
+    second_navbar:
+      home: Trang chủ
+      new: Tin tức
+      team: Teams
+      clubs: Clubs
+      Media: Media
+      schedule: Lịch thi đấu
