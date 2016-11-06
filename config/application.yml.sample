@@ -1,6 +1,8 @@
 EMAIL_USERNAME: "sample@sample.com"
 EMAIL_PASSWORD: "sample1"
 HOST: "localhost:3000"
+SMTP_ADDRESS: "smtp.gmail.com"
+SMTP_DOMAIN: "gmail.com"
 
 DATABASE_HOSTNAME: "localhost"
 DATABASE_NAME: "ArsenalMedia24_development"

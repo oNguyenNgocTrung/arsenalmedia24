@@ -1,0 +1,35 @@
+= form_for resource, as: resource_name, url: registration_path(resource_name) do |f|
+  .panel.panel-body.login-form
+    .text-center
+      .icon-object.border-success.text-success
+        i.icon-plus3
+      h5.content-group
+        = t ".title"
+        small.display-block
+          = t ".credential"
+    .form-group.has-feedback.has-feedback-left
+      = f.email_field :email, class: "form-control", placeholder: t(".email")
+      .form-control-feedback
+        i.icon-mention.text-muted
+    .form-group.has-feedback.has-feedback-left
+      = f.text_field :name, class: "form-control", placeholder: t(".name")
+      .form-control-feedback
+        i.icon-user-check.text-muted
+    .form-group.has-feedback.has-feedback-left
+      = f.password_field :password, autocomplete: "off", class: "form-control",
+        placeholder: t(".password")
+      .form-control-feedback
+        i.icon-user-lock.text-muted
+    .form-group.has-feedback.has-feedback-left
+      = f.password_field :password_confirmation, autocomplete: "off",
+        class: "form-control", placeholder: t(".password_confirmation")
+      .form-control-feedback
+        i.icon-user-lock.text-muted
+    .form-group
+      = button_tag type: "submit", class: "btn bg-teal btn-block btn-lg" do
+        = t ".sign_up"
+        i.icon-circle-right2.position-right
+    .content-divider.text-muted.form-group
+      span = t ".have_account"
+    = link_to t(".login"), new_session_path(resource_name),
+      class: "btn btn-default btn-block content-group"

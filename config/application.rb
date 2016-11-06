@@ -17,10 +17,18 @@ module Arsenalmedia24
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
     I18n.available_locales = [:en, :vi]
     config.time_zone = "London"
-    config.i18n.default_locale = :vi
+    config.i18n.default_locale = :en
 
     Dir.glob("config/routes/*").each do |route|
       config.paths["config/routes.rb"] << Rails.root.join(route)
+    end
+
+    config.to_prepare do
+      Devise::SessionsController.layout "devise"
+      Devise::RegistrationsController.layout "devise"
+      Devise::PasswordsController.layout "devise"
+      Devise::ConfirmationsController.layout "devise"
+      Devise::UnlocksController.layout "devise"
     end
   end
 end

@@ -1,0 +1,17 @@
+= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f|
+  = devise_error_messages!
+  .panel.panel-body.login-form
+    .text-center
+      .icon-object.border-warning.text-warning
+        i.icon-spinner11
+      h5.content-group
+        = t ".title"
+        small.display-block
+          = t ".info"
+    .form-group.has-feedback
+      = f.email_field :email, class: "form-control", placeholder: t(".email")
+      .form-control-feedback
+        i.icon-mail5.text-muted
+    = button_tag type: "submit", class: "btn bg-blue btn-block" do
+      = t ".reset_pass"
+      i.icon-arrow-right14.position-right

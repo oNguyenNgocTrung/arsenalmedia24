@@ -18,3 +18,4 @@
 //= require plugins/loaders/blockui.min.js
 //= require plugins/ui/nicescroll.min.js
 //= require plugins/ui/drilldown.js
+//= require plugins/notifications/pnotify.min.js

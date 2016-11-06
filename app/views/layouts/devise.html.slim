@@ -13,13 +13,12 @@ html
     == content_for :specific_page_css
     == javascript_include_tag "application", "data-turbolinks-track": true
     == content_for :specific_page_js
-  body.narbar-bottom
-    == render "layouts/main_navbar"
-    == render "layouts/second_navbar"
+    == javascript_include_tag "plugins/forms/styling/uniform.min.js",
+      "core/app", "pages/login", "data-turbolinks-track": true
+  body.login-container
     .page-container
       .page-content
         .content-wrapper
           == yield
-    == render "layouts/footer"
     javascript:
       #{render "layouts/notification.js"}

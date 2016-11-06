@@ -1,0 +1,46 @@
+= form_for resource, as: resource_name, url: session_path(resource_name) do |f|
+  .panel.panel-body.login-form
+    .text-center
+      .icon-object.border-slate-300.text-slate-300
+        i.icon-reading
+      h5.content-group
+        = t ".title"
+        small.display-block
+          = t ".credential"
+    .form-group.has-feedback.has-feedback-left
+      = f.email_field :email, class: "form-control", placeholder: t(".email")
+      .form-control-feedback
+        i.icon-user.text-muted
+    .form-group.has-feedback.has-feedback-left
+      = f.password_field :password, autocomplete: "off", class: "form-control",
+        placeholder: t(".password")
+      .form-control-feedback
+        i.icon-lock2.text-muted
+    .form-group.login-options
+      .row
+        .col-sm-6
+          label.check_box-inline
+            = f.check_box :remember_me, class: "styled", checked: true
+            = t ".remember"
+        .col-sm-6.text-right
+          = link_to t(".forgot_pass"), new_password_path(resource_name)
+    .form-group
+      = button_tag type: "submit", class: "btn bg-blue btn-block" do
+        = t ".login"
+        i.icon-arrow-right14.position-right
+    .content-divider.text-muted.form-group
+      span = t ".login_other"
+    ul.list-inline.form-group.list-inline-condensed.text-center
+      li
+        = link_to "javascript:void(0)", class: "btn border-indigo text-indigo btn-flat btn-icon btn-rounded" do
+          i.icon-facebook
+      li
+        = link_to "javascript:void(0)", class: "btn border-danger text-danger btn-flat btn-icon btn-rounded" do
+          i.icon-google
+      li
+        = link_to "javascript:void(0)", class: "btn border-info text-info btn-flat btn-icon btn-rounded" do
+          i.icon-twitter
+    .content-divider.text-muted.form-group
+      span = t ".not_account"
+    = link_to t(".sign_up"), new_registration_path(resource_name),
+      class: "btn btn-default btn-block content-group"

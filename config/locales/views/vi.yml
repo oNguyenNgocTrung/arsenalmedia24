@@ -6,6 +6,7 @@ vi:
       user_profile: Thông tin tài khoản
       user_setting: Cài đặt tài khoản
       logout: Đăng xuất
+      login: Đăng nhập
     second_navbar:
       home: Trang chủ
       new: Tin tức
@@ -13,3 +14,38 @@ vi:
       clubs: Clubs
       Media: Media
       schedule: Lịch thi đấu
+  devise:
+    sessions:
+      new:
+        title: Đăng nhập tài khoản của bạn
+        credential: Your credentials
+        email: &email Email
+        password: &password Mật khẩu
+        remember: Ghi nhớ
+        forgot_pass: Quên mật khẩu?
+        login: &login Đăng nhập
+        login_other: hoặc đăng nhập với
+        not_account: Không có tài khoản?
+        sign_up: &sign_up Đăng kí
+    registrations:
+      new:
+        title: Tạo tài khoản
+        credential: All fields are required
+        email: Email của bạn
+        name: Username
+        password: Tạo mật khẩu
+        password_confirmation: Nhập lại mật khẩu
+        sign_up: *sign_up
+        login: *login
+        have_account: Đã có tài khoản?
+    passwords:
+      new:
+        title: Khôi phục mật khẩu
+        info: Chúng tôi sẽ gửi cho bạn các hướng dẫn trong email
+        email: Email của bạn
+        reset_pass: Khôi phục
+    unlocks:
+      new:
+        info: Resend unlock instructions
+        email: Email
+        unlock: Resend unlock

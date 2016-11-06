@@ -20,25 +20,31 @@
           span.caret
         ul.dropdown-menu
           li
-            == link_to change_locale_path(locale_select), 
+            == link_to change_locale_path(locale_select),
               class: "#{language_select}" do
               == image_tag img_lang_select, alt: ""
               == t ".#{language_select}"
-      li.dropdown.dropdown-user
-        a.dropdown-toggle data-toggle="dropdown"
-          == image_tag "placeholder.jpg", alt: ""
-          span Bobo
-          i.caret
-        ul.dropdown-menu.dropdown-menu-right
-          li
-            == link_to "javascript:void(0)"
-              i.icon-user-plus
-              == t ".user_profile"
-          li
-            == link_to "javascript:void(0)"
-              i.icon-cog5
-              == t ".user_setting"
-          li
-            == link_to "javascript:void(0)"
-              i.icon-switch2
-              == t ".logout"
+      - if user_signed_in?
+        li.dropdown.dropdown-user
+          a.dropdown-toggle data-toggle="dropdown"
+            == image_tag "placeholder.jpg", alt: ""
+            span = current_user.name
+            i.caret
+          ul.dropdown-menu.dropdown-menu-right
+            li
+              == link_to "javascript:void(0)" do
+                i.icon-user-plus
+                == t ".user_profile"
+            li
+              == link_to "javascript:void(0)" do
+                i.icon-cog5
+                == t ".user_setting"
+            li
+              == link_to destroy_user_session_path, method: :delete do
+                i.icon-switch2
+                == t ".logout"
+      - else
+        li
+          == link_to new_user_session_path do
+            i.fa.fa-sign-in.position-left
+            == t ".login"

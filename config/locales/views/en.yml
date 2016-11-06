@@ -6,6 +6,7 @@ en:
       user_profile: My Profile
       user_setting: Account settings
       logout: Logout
+      login: Login
     second_navbar:
       home: Home
       new: News
@@ -13,3 +14,38 @@ en:
       club: Clubs
       media: Media
       schedule: Schedule
+  devise:
+    sessions:
+      new:
+        title: Login to your account
+        credential: Your credentials
+        email: &email Email
+        password: &password Password
+        remember: Remember
+        forgot_pass: Forgot password?
+        login: &login Login
+        login_other: or sign in with
+        not_account: Don't have an account?
+        sign_up: &sign_up Sign up
+    registrations:
+      new:
+        title: Create account
+        credential: All fields are required
+        email: Your Email
+        name: Choose username
+        password: Create password
+        password_confirmation: Repeat password
+        sign_up: *sign_up
+        login: *login
+        have_account: Have account?
+    passwords:
+      new:
+        title: Password recovery
+        info: We'll send you instructions in email
+        email: Your Email
+        reset_pass: Reset password
+    unlocks:
+      new:
+        info: Resend unlock instructions
+        email: Email
+        unlock: Resend unlock
